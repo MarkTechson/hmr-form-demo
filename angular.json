@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "hmr-form-demo"
+  "defaultProject": "hmr-form-demo",
+  "cli": {
+    "analytics": false
+  }
 }
