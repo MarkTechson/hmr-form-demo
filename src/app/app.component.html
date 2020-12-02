@@ -1,9 +1,18 @@
 <main>
-  <input type="text" [(ngModel)]="userName">
-  {{userName}}
-  <button (click)="addUsers(userName)">
-    Add New User 🎉 🔥
-  </button>
-
-  <p>There are {{this.users.length}} users</p>
+  <article>
+    <section>
+      <h1 class="title">Create your Account</h1>
+      <label for="firstName">First Name</label>
+      <input type="text" id="firstName" [(ngModel)]="applicant.firstName">
+      <label for="lastName">Last Name</label>
+      <input type="text" type="text" id="lastName" [(ngModel)]="applicant.lastName">
+      <label for="emailAddress">Email Address</label>
+      <input type="text" id="emailAddress" type="email" />
+      <button>Let's go!</button>
+    </section>
+    <section>
+      <!-- alt tag is empty because this image is only decoration -->
+      <img src="../assets/undraw_medicine_b1ol.svg" alt="" />
+    </section>
+  </article>
 </main>
