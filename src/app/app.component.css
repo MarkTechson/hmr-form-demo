@@ -4,14 +4,14 @@ header, footer {
 
 main {
     display: flex;
-    font-family: sans-serif;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: sans-serif;
     height: 100vh;
 }
 
 article {
-    display: flex;
     border: solid 1px rgba(0, 0, 0, .2);
     border-radius: 5px;
     padding: 25px;
@@ -21,6 +21,7 @@ article {
 .title {
     font-size: 20pt;
     margin-bottom: 20px;
+    color: hsl(243, 100%, 15%, 1);
 }
 
 img {
@@ -30,25 +31,24 @@ img {
 label {
     display: block;
     margin: 5px 0 5px 0;
+    color: hsl(243, 100%, 15%, 1);
 }
 
 input[type="text"], input[type="email"] {
     display: block;
-    margin: 0 0 10px 0;
-    width: 400px;
+    width: 100%;
     padding: 8px;
     border: solid 1px #ced4da;
     border-radius: 5px;
-}
-
-input[type="text"]:last-of-type {
-    margin: 0 0 5px 0;
+    box-sizing: border-box;
+    margin: 0 0 10px 0;
 }
 
 button {
-    background: #6c63ff;
+    background: hsl(243, 100%, 69%, 1);
     color: white;
     padding: 10px;
     border: none;
     border-radius: 5px;
+    text-transform: uppercase;
 }
